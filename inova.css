@@ -1,0 +1,963 @@
+/*
+  CSS Reset
+_________________________________________________________
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: content-box;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q,
+blockquote {
+  quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+img,
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * Set default font family to sans-serif.
+ * Prevent iOS text size adjust after orientation change, without disabling
+ * user zoom.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  *vertical-align: auto;
+  /* 1 */
+  *zoom: 1;
+  /* 1 */
+  *display: inline;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+  text-decoration: none;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/*# sourceMappingURL=_normalize.css.map */
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-bold.eot');
+  src: url('fonts/roboto-bold.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-bold.woff2') format('woff2'), url('fonts/roboto-bold.woff') format('woff'), url('fonts/roboto-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-bolditalic.eot');
+  src: url('fonts/roboto-bolditalic.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-bolditalic.woff2') format('woff2'), url('fonts/roboto-bolditalic.woff') format('woff'), url('fonts/roboto-bolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-medium.eot');
+  src: url('fonts/roboto-medium.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-medium.woff2') format('woff2'), url('fonts/roboto-medium.woff') format('woff'), url('fonts/roboto-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-mediumitalic.eot');
+  src: url('fonts/roboto-mediumitalic.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-mediumitalic.woff2') format('woff2'), url('fonts/roboto-mediumitalic.woff') format('woff'), url('fonts/roboto-mediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-light.eot');
+  src: url('fonts/roboto-light.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-light.woff2') format('woff2'), url('fonts/roboto-light.woff') format('woff'), url('fonts/roboto-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-lightitalic.eot');
+  src: url('fonts/roboto-lightitalic.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-lightitalic.woff2') format('woff2'), url('fonts/roboto-lightitalic.woff') format('woff'), url('fonts/roboto-lightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-thin.eot');
+  src: url('fonts/roboto-thin.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-thin.woff2') format('woff2'), url('fonts/roboto-thin.woff') format('woff'), url('fonts/roboto-thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto-thinitalic.eot');
+  src: url('fonts/roboto-thinitalic.eot?#iefix') format('embedded-opentype'), url('fonts/roboto-thinitalic.woff2') format('woff2'), url('fonts/roboto-thinitalic.woff') format('woff'), url('fonts/roboto-thinitalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+body {
+  background-color: #fff;
+  font: 0.8125em/1.3 'roboto', 'helvetica neue', arial, helvetica, sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+.inline-block,
+.principal .icon::before,
+.encap-unidades,
+.encap-periodo,
+.encap-periodo div,
+.mais-sobre::after,
+.h-encap,
+.coluna,
+.unidades li,
+nav li,
+.modulo {
+  display: inline-block;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+.sprite,
+.logoheader,
+.logoinova,
+.logofooter,
+.apoio a,
+.header-proj::before,
+.accordion h2::after,
+.documentos a:before {
+  background-image: url("img/sprites.png");
+  background-repeat: no-repeat;
+}
+.hidden-text {
+  display: block;
+  direction: ltr;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.topo {
+  border-bottom: solid 20px #7483ae;
+  padding: 3px 0;
+  background: linear-gradient(to bottom, #ffffff, #dddddd);
+}
+.topo .grid {
+  text-align: left;
+}
+.logoheader {
+  width: 170px;
+  height: 22px;
+  margin: 5px 0;
+}
+.logoinova {
+  background-position: -233px 0;
+  margin: 10px 0;
+  width: 104px;
+  height: 34px;
+}
+.grid,
+.header-proj {
+  width: 95%;
+  width: calc(100% - 40px);
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+.destaque {
+	display: block;
+  font-weight: 700;
+}
+h3 .destaque {
+	text-transform: uppercase;
+	font-weight: 700;	
+}
+.menu-principal {
+  margin: auto;
+  height: 1em;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.menu-principal li {
+  margin-left: 20px;
+}
+.menu-principal li:first-child {
+  margin-left: 0;
+}
+.menu-principal a {
+  color: #706F6F;
+  font-weight: 300;
+}
+.menu-principal a:hover {
+  text-decoration: none;
+}
+.menu-principal .selecionado {
+  color: #3C3C3B;
+}
+.menu-principal .selecionado,
+.menu-principal a:hover {
+  font-weight: 700;
+}
+.grid.menu {
+  position: relative;
+}
+.corpo {
+  color: #575757;
+  font-weight: 200;
+}
+.corpo h2, .corpo h2 a {
+  color: #1d70b7;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 2em 0 .5em;
+  
+}
+.principal h3 {
+  text-align: left;	
+}
+.linha {
+  text-align: center;
+  padding: 2em 0;	
+}
+.linha div.modulo:first-of-type {
+  margin-left: 0;
+}
+.chamada-encap {
+  background: rgba(255,255,255,.46);
+  padding: .2em 0;
+}
+.chamada {
+  text-align: right;
+  font-size: 2em;
+}
+.chamada .destaque {
+  font-size: .6375em;
+}
+.mais-sobre {
+	color: #586E86 !important;
+	display: block;
+	font-size: .85em;
+	padding-top: 2em;
+	text-align: right;	
+	text-transform: uppercase;
+}
+.mais-sobre::after {
+  content: "+";
+  background-color: #546c83;
+  border-radius: 1em;
+  color: #fff;
+  /* font-size: .8em; */
+  font-weight: 700;
+  margin-left: .75em;
+  padding: 0 .325em;
+  vertical-align: baseline;
+}
+.principal .icon::before {
+  content: "";
+  background-image: url(img/sprites.png);
+  background-repeat: no-repeat;
+}
+.primeira .h-encap,
+.segunda .h-encap {
+  display: block;
+}
+.primeira {
+  color: #fff;
+  background-color: #546c84;
+  padding: 15px 0 5px;
+}
+.primeira .destaque {
+  margin-bottom: 4.23em;
+}
+.primeira li {
+  margin-left: 1.23em;
+}
+.primeira li:first-child {
+  margin-left: 0;
+}
+.primeira .modulo {
+  color: #fff;
+  display: block;
+  min-width: 8em;
+  font-size: 1.15em;
+  font-weight: 500;
+  padding: 0 0 15px;
+  text-transform: uppercase;
+}
+.primeira .icon::before {
+  height: 49px;
+  margin-bottom: 10px;
+}
+.primeira .icon::before {
+  height: 49px;
+  margin-bottom: 10px;
+}
+.proj::before {
+  background-position: -99px -134px;
+  width: 46px;
+}
+.conhe:before {
+  background-position: -162px -134px;
+  width: 42px;
+}
+.edu::before {
+  background-position: -227px -134px;
+  width: 41px;
+}
+.noti::before {
+  background-position: -290px -134px;
+  width: 48px;
+}
+.segunda a {
+	color: #586E86;	
+}
+.segunda h2 {
+  font-weight: 500;
+  text-align: center;
+}
+.segunda .modulo {
+  width: 10.5em;
+  margin-left: 75px;
+}
+.segunda .icon::before {
+  height: 82px;
+  margin-bottom: 10px;
+}
+.pq::before {
+  background-position: left -199px;
+  width: 72px;
+}
+.como::before {
+  background-position: -112px -199px;
+  width: 82px;
+}
+.que::before {
+  background-position: -245px -199px;
+  width: 93px;
+}
+.terceira {
+	background: #E9EEF9;	
+}
+.quarta {
+	background: #BEC3CE;	
+}
+.terceira a,
+.terceira h2{
+	color: #1D70B7;	
+}
+.quarta a,
+.quarta h2{
+	color: #E84E1B;	
+}
+.terceira .modulo,
+.quarta .modulo {
+	background: #fff;
+	padding: 9px 12px;
+	margin-left: 50px;
+	text-align: left;
+	width: 182px;
+	height: 150px;	
+}
+.terceira h2,
+.quarta h2 {
+	font-size: 1.2em;
+	font-weight: 300;
+	padding: 0 0 1.5em;
+	text-transform: uppercase;
+}
+.terceira h3,
+.quarta h3 {
+	font-size: 1.2em;
+	font-weight: 500;
+	padding-bottom: 1em;
+}
+.terceira .icon::before,
+.quarta .icon::before {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  vertical-align: bottom;
+}
+.videos::before {
+  background-position: left bottom;
+}
+.videos .destaque {
+  padding-top: .5em;
+}
+.design::before {
+  background-position: -50px bottom;
+}
+.lab::before {
+  background-position: -97px bottom;
+}
+.presenciais::before {
+  background-position: -214px bottom;
+  width: 40px;
+}
+.dist::before {
+  background-position: -265px bottom;
+}
+.outros::before {
+  background-position: -307px bottom;
+}
+.coluna {
+  text-align: left;
+  vertical-align: top;
+}
+.esquerda {
+  width: 62.5%;
+}
+.esquerda p {
+  padding-bottom: 1em;
+}
+.esquerda .border {
+  border-right: solid 1px #9e9d9d;
+  padding: 0 1em 2em 0;
+  margin-bottom: 2em;
+}
+.direita {
+  margin-top: -0.5em;
+  width: 34.5%;
+  padding-left: 1em;
+  width: calc(37.5% - 1em);
+}
+.direita p {
+  text-align: justify;
+}
+.header-proj-encap {
+  background: url('img/bg-header-subpg.jpg');
+  background-size: cover;
+  height: 40px;
+}
+.header-proj {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: .5em 0;
+  position:relative;
+  text-align: left;
+}
+.header-proj::before {
+  content: "";
+  background-position-y: -121px;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 88px;
+  height: 100%;
+}
+.unidades li {
+  background: #909BAA;
+  color: #fff;
+  margin-left: 1em;
+  padding: .5em 1em;
+}
+.unidades li:first-child {
+  margin-left: 0;
+}
+footer {
+  background: #586e86;
+  color: #fff;
+  padding: 2em 0 5em;
+}
+.logofooter {
+  background-position: 0 -29px;
+  width: 170px;
+  height: 22px;
+  margin-bottom: 2em;
+}
+
+/* A partir daqui, feito sem less. Inserir depois */
+.principal .body-header .linha {
+	height: 3em;
+	padding: 0;
+}
+.principal .menu-principal-encap {
+	height: 2.5em;
+}
+
+.pessoas-lista figure {
+  position: relative;
+}
+.pessoas-lista .foto {
+  max-width: 100px;
+  border-radius: 50px;
+  display: inline;
+}
+.pessoas-lista .caption {
+  vertical-align: top;
+  position: absolute;
+  left: 120px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4em;
+ }
+ .pessoas-lista .nome {
+  padding-bottom: .7em;
+  font-style: italic;
+}
+
+.accordion h2 {
+	background: #E9EEF9;
+	cursor: pointer;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+}
+.accordion h2::after {
+	content: "";
+	background-position: -249px -42px; 
+	display: block;
+	margin: 5px 10px;
+	float: right;
+	width: 10px;
+	height: 10px;
+}
+.accordion .ui-accordion-header-active::after {
+	background-position: -232px -42px; 
+}
+.documentos a {
+	display:block;
+	margin-bottom: 1em;	
+}
+.documentos a::before {
+	content: "";
+	display: inline-block;
+	float: left;
+	margin-right: .75em;
+	width: 14px;
+	height: 18px;
+}
+.documentos .planilha::before {
+	background-position: -304px -38px;	
+}
+.documentos .slides::before {
+	background-position: -323px -38px;	
+}
+.documentos .texto::before {
+	background-position: -284px -38px;
+}
+.apoio {
+	padding-top: 2em;
+	text-align:justify;	
+}
+.apoio::after {
+	content: "";
+	display: inline-block;
+	width: 100%;	
+}
+.apoio a {
+	height: 40px;
+}
+.apoio1 {
+	background-position: 0 -63px;	
+	width: 30px;
+}
+.apoio2 {
+	background-position: -57px -63px;
+	width: 28px;
+}
+.apoio3 {
+	background-position: -105px -63px;
+	width: 40px;
+}
+.apoio4 {
+	background-position: -163px -63px;
+	width: 33px;
+}
+.apoio5 {
+	background-position: -212px -63px;
+	width: 78px;
+}
+.apoio6 {
+	background-position: -303px -63px;
+	width: 31px;
+}
+.pg-lista .unidades li{
+  color: rgb(87,87,87);
+  background-color: transparent;
+  padding: 0;
+}
+.pg-lista h2 {
+  padding-bottom: .25em;
+}
+.pg-lista h3 {
+  color: #546c83;
+  font-weight: 400;
+  padding-top: .5em;
+}
+.pg-lista .lista-projetos {
+  padding-bottom: 2em;
+}
+.pg-lista .lista-projetos > li {
+  border-top: solid 1px #999;
+  padding-bottom: 1em;
+}
+.pg-lista .lista-projetos > li:first-child {
+  border-top: none;
+}
+.encap-periodo div {
+   margin-left: 1em;
+}
+.encap-periodo div:first-of-type {
+   margin-left: 0;
+}
+.encap-unidades {
+  margin-left: 2em;
+}
